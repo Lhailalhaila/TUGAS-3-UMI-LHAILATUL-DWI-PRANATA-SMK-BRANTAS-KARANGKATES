@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Profil digital responsive Umi Lhailatul D.P - Junior Web Developer">
+ <title>Profil Digital Responsive - Umi Lhailatul D.P</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page-wrapper">
+<article class="profile-card">
+<!-- Kolom kiri / header profil -->
+<header class="card-aside"> <!-- Tugas Minggu 03: tombol Theme Toggle -->
+<button id="btnToggleTema" class="btn-tema" type="button" aria-pressed="false">
+  ☀️ Mode Terang
+ </button>
+  <div class="avatar-box" aria-label="Avatar programmer" role="img">
+<span class="avatar-icon" aria-hidden="true">👨‍💻</span>
+</div>
+<h1 class="student-name">Umi Lhailatul D.P</h1>
+<p class="student-role">Junior Web Developer</p>
+<p class="student-school">SMK BRANTAS KARANGKATES — RPL</p>
+<!-- Tugas Minggu 03: tombol pembuka modal harus memiliki id btnKontak -->
+<a
+id="btnKontak"
+href="mailto:lhailalhaila53@gmail.com"
+class="btn-contact"
+>
+Kirim Pesan
+</a>
+</header>
+<!-- Kolom kanan / konten detail -->
+<section class="card-content">
+<div class="bio-section">
+<h2 class="section-heading">Tentang Saya</h2>
+<p class="bio-text">
+Siswa kelas 10 Rekayasa Perangkat Lunak yang sedang mendalami
+arsitektur front-end modern, HTML semantik, CSS Flexbox, JavaScript,
+serta prinsip Mobile-First Responsive Design.
+</p>
+</div>
+<div class="skills-section" id="skillsSection">
+<div class="section-title-row">
+<h2 class="section-heading">Keahlian &amp; Kompetensi</h2>
+<!-- Modifikasi mandiri di luar panduan modul -->
+<button id="btnToggleSkills" class="btn-skill-toggle" type="button" aria-expanded="true">
+Sembunyikan Keahlian
+</button>
+</div>
+<div class="skill-matrix" id="skillMatrix">
+<div class="skill-badge">HTML5 Semantic</div>
+<div class="skill-badge">CSS3 Flexbox</div>
+<div class="skill-badge">Responsive Design</div>
+<div class="skill-badge">JavaScript DOM</div>
+<div class="skill-badge">Event Listener</div>
+<div class="skill-badge">Chrome DevTools</div>
+</div>
+</div>
+</section>
+</article>
+</main>
+
+<!-- Tugas Minggu 03: Modal Popup, tersembunyi secara default -->
+<div id="modalKontak" class="modal-overlay" aria-hidden="true">
+<div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="judulModal">
+<h2 id="judulModal">Kirim Pesan</h2>
+<p>Silakan hubungi saya melalui email: lhailalhaila53@gmail.com</p>
+<button id="btnTutupModal" class="btn-tutup" type="button">Tutup</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
